@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h1>RESULTS</h1>
+<p>Your Score Is: </p>
+<p>{{value}}</p>
+<p>The Answer To 1 was Aicama Zorba of La-Susa and you chose {{session['answer1']}}</p>
+<p>The Answer To 2 was Sultan Kösen and you chose {{session['answer2']}}</p>
+<p>The Answer To 3 was Joseph Dituri and you chose {{session['answer3']}}</p>
+<p>Final Time: {{time_taken}}</p>
+{% endblock %}
