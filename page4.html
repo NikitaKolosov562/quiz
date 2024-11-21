@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% set active_page = "home" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h1>Longest Time Spent Living Underwater</h1>
+<form action="/question4" method="POST">
+  <select name="questionTHREE">
+    <option>Houdini</option>
+    <option>David Blaine</option>
+    <option>Jose Moreno</option>
+    <option> Joseph Dituri</option>
+  </select>
+  <br><br>
+    <input type="submit">
+</form>
+
+{% endblock %}
